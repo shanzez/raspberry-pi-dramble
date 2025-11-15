@@ -1,3 +1,5 @@
+DEPRECATED: Please see my [pi-cluster](https://github.com/geerlingguy/pi-cluster) project for active development.
+
 <a href="http://www.pidramble.com"><img src="https://cdn.rawgit.com/geerlingguy/raspberry-pi-dramble/master/images/logo.svg" width="100%" height="73"></a>
 
 # Raspberry Pi Dramble
@@ -74,11 +76,11 @@ The Pi Dramble includes a built-in Docker registry that is used to host Drupal i
      ```
 
   1. Follow the linked directions to [get Docker to use your self-signed Docker Registry cert](https://docs.docker.com/registry/insecure/#use-self-signed-certificates). For macOS, using the GUI:
-    1. Double-click on `k8s-manifests/docker-registry/certs/tls.crt` to add it to your Keychain
-    1. Select the certificate in Keychain Access, choose 'File' > 'Get Info'
-    1. Expand the 'Trust' section, and choose 'Always Trust' for "When using this certificate:"
-    1. Close the info dialog and enter your password to save the changes.
-    1. Restart Docker for Mac.
+     1. Double-click on `k8s-manifests/docker-registry/certs/tls.crt` to add it to your Keychain
+     1. Select the certificate in Keychain Access, choose 'File' > 'Get Info'
+     1. Expand the 'Trust' section, and choose 'Always Trust' for "When using this certificate:"
+     1. Close the info dialog and enter your password to save the changes.
+     1. Restart Docker for Mac.
   1. Tag your image for the registry and push it:
 
      ```
